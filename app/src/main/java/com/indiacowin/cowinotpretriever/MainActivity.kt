@@ -173,7 +173,7 @@ class MainActivity : AppCompatActivity() {
         mReceiverIsActive = true
 
         // set url for sending the cowin otp sms
-        mKvdbUrl = "${resources.getString(R.string.kvdb_base_url)}/${mKvdbBucketkeyEntry.text}/${mPhoneNumberEntry.text}"
+        mKvdbUrl = "${mKvdbBucketkeyEntry.text}/${mPhoneNumberEntry.text}"
         mStatusTextView.text = "Sending CoWIN OTP sms to $mKvdbUrl"
         Toast.makeText(this, "CoWIN SMS Retriever has started", Toast.LENGTH_LONG).show()
     }
